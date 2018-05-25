@@ -26,6 +26,7 @@
   <ItemGroup>
     <Compile Remove="ViewModels\EnterpriseViewModel.cs" />
     <Compile Remove="Services\DefaultEnterpriseService.cs" />
+    <Compile Remove="Services\DefaultDataAccessService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Odisee.Social.Entities\Odisee.Social.Entities.csproj" />

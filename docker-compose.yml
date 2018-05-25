@@ -1,0 +1,25 @@
+﻿version: '3'
+
+services:
+    api:
+        image: odisee/Odisee.Social.Api
+        container_name: odisee_social_api
+        build:
+            context: .
+        ports:
+            - 8080:80
+        environment:
+            ASPNETCORE_ENVIRONMENT: Development
+#        depends_on:
+#            - postgres
+#    postgres:
+#        image: postgres: 9.6.3
+#        container_name: paperview_db
+#        environment:
+#            POSTGRES_DB: paperview
+#            POSTGRES_USER: paperview_user
+#            POSTGRES_PASSWORD: Azerty123
+#        ports:
+#            - 5432:5432
+#        volumes:
+#            - ./db:/docker-entrypoint-initdb.d
