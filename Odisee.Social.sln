@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odisee.Social.Entities", "Odisee.Social.Entities\Odisee.Social.Entities.csproj", "{5DF25077-A0EB-4C0A-AD5E-0150461B6B50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odisee.Social.DAL", "Odisee.Social.DAL\Odisee.Social.DAL.csproj", "{483B5588-6029-4333-82D9-E7A167F5AC46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odisee.Social.Api", "Odisee.Social.Api\Odisee.Social.Api.csproj", "{511AF5AC-AC02-49EE-AAF1-CAD54BEB5319}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DF25077-A0EB-4C0A-AD5E-0150461B6B50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DF25077-A0EB-4C0A-AD5E-0150461B6B50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DF25077-A0EB-4C0A-AD5E-0150461B6B50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DF25077-A0EB-4C0A-AD5E-0150461B6B50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{483B5588-6029-4333-82D9-E7A167F5AC46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{483B5588-6029-4333-82D9-E7A167F5AC46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{483B5588-6029-4333-82D9-E7A167F5AC46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{483B5588-6029-4333-82D9-E7A167F5AC46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{511AF5AC-AC02-49EE-AAF1-CAD54BEB5319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{511AF5AC-AC02-49EE-AAF1-CAD54BEB5319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{511AF5AC-AC02-49EE-AAF1-CAD54BEB5319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{511AF5AC-AC02-49EE-AAF1-CAD54BEB5319}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
