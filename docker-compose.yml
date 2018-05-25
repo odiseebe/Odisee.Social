@@ -2,12 +2,12 @@
 
 services:
     api:
-        image: odisee/Odisee.Social.Api
+        image: odisee/odisee-social-api
         container_name: odisee_social_api
         build:
             context: .
         ports:
-            - 8080:80
+            - 8090:80
         environment:
             ASPNETCORE_ENVIRONMENT: Development
 #        depends_on:
