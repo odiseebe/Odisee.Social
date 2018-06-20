@@ -61,18 +61,18 @@ namespace Odisee.Social.Api
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
+            /*if (env.IsDevelopment())
+            {*/
                 app.UseDeveloperExceptionPage();
-            }
+            /*}
             else
             {
                 // Rewrite to redirect traffic to https
                 var options = new RewriteOptions().AddRedirectToHttps();
                 app.UseRewriter(options);
-            }
-
-            app.UseMvc();
+            }*/
+            
+			app.UseMvc();
         }
     }
 }
