@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: odisee-social-api-deployment
+spec:
+  selector:
+    matchLabels:
+      app: odisee-social-api
+  replicas: 3 # tells deployment to run 3 pods matching the template
+  template: # create pods using pod definition in this template
+    metadata:
+      labels:
+        app: odisee-social-api
+    spec:
+      containers:
+      - name: odisee-social-api
+        image: odisee/odisee-social-api:latest
+        env:
+        - name: ASPNETCORE_ENVIRONMENT
+          value: "Development"
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: odisee-social-api-service
+spec:
+  selector:
+    app: odisee-social-api
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
+    protocol: TCP
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+  name: odisee-social-api-ingress
+spec:
+  rules:
+  - host: apps.hubkaho.be
+    http:
+      paths:
+      - backend:
+          serviceName: odisee-social-api-service
+          servicePort: 80
+        path: /social-api
