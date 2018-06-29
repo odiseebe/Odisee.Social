@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: odisee-social-api
-        image: odisee/odisee-social-api:10
+        image: odisee/odisee-social-api:$BUILD_NUMBER
         env:
         - name: ASPNETCORE_ENVIRONMENT
           value: "Development"
